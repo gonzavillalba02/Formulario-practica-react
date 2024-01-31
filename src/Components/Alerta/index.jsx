@@ -13,9 +13,9 @@ const Alerta = ({handleAlert}) => {
                         Please follow the rules below :
                     </p>
                     <ul>
-                        <li><IoIosCheckmarkCircleOutline className="alerta-cartel-reglas-icono"/> The First and the Last name must contain at least 2 characters</li>
-                        <li><IoIosCheckmarkCircleOutline className="alerta-cartel-reglas-icono"/> Enter a valid email. Must contain '@'</li>
-                        <li><IoIosCheckmarkCircleOutline className="alerta-cartel-reglas-icono"/> The password must contain at least 1 capital letter and 1 special character (# _ - $ @)</li>
+                        <li><IoIosCheckmarkCircleOutline className="alerta-cartel-reglas-icono"/> <p>The First and the Last name must contain at least 2 characters</p></li>
+                        <li><IoIosCheckmarkCircleOutline className="alerta-cartel-reglas-icono"/> <p>Enter a valid email. Must contain '@'</p></li>
+                        <li><IoIosCheckmarkCircleOutline className="alerta-cartel-reglas-icono"/> <p>The password must contain between 8 and 20 characters, 1 capital letter and 1 special character (# _ - $ @)</p></li>
                     </ul>
                 </div>
                 <button onClick={handleAlert}>

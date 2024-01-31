@@ -2,7 +2,7 @@ import React from "react";
 import TextField from '@mui/material/TextField';
 import './textfield.css';
 
-const Textfield = ({label, type}) => {
+const Textfield = ({label, type, updateValues, valor, input, error}) => {
     return(
         <>
             <TextField 
@@ -23,9 +23,12 @@ const Textfield = ({label, type}) => {
                 }
             }}
             type={type}
+            value={valor}
+            onChange={(e) => updateValues(input,  e.target.value, true)}
+            error = {error === "" ? false : !error}
             />
             <div className="white-div">
-                hola
+                .
             </div>
         </>
     )

@@ -4,7 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import Textfield from "../Textfield/textfield";
 
-const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion_boton}) => {
+const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion_boton, updateValues, valuesup, handleCompleted}) => {
 
     return(
         <div className="sign-container">
@@ -20,7 +20,10 @@ const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion
                         <div className="sign-container-form-white-header-sign">
                             {logo}
                             <button
-                            onClick={handleStep}
+                            onClick={()=>{
+                                handleStep()
+                                handleCompleted()
+                                }}
                             >
                                 {boton == 'Sign in' ? 'Sign up' : 'Sign in'}
                             </button>
@@ -30,7 +33,16 @@ const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion
                         <form className="sign-container-form-white-form">
 
                             {labels.map((label) => {
-                                return <Textfield label = {label.label} type={label.type}/>
+                                return <Textfield
+                                        key={label.label}
+                                        input = {label.input}
+                                        label = {label.label} 
+                                        type={label.type}
+                                        error = {label.valid}
+                                        updateValues={updateValues}
+                                        valor= {label.value}
+                                        valuesup={valuesup}
+                                        />
                             })}
 
                         </form>
