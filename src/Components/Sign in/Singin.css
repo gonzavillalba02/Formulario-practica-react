@@ -34,9 +34,16 @@
     width: 21vw;
     height: 60vh;
     position: relative;
-    bottom: 97vh;
     left: 46vw;
     z-index: 50;
+}
+
+.sign-container-from-singin {
+    bottom: 98vh;
+}
+
+.sign-container-from-singup {
+    bottom: 91vh;
 }
 
 .sign-container-form-back-arrow {

@@ -4,12 +4,12 @@ import { IoIosArrowBack } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import Textfield from "../Textfield/textfield";
 
-const Signin = ({labels, boton, logo, header, imagen, handleStep}) => {
+const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion_boton}) => {
 
     return(
         <div className="sign-container">
             <div className="sign-container-yellow"></div>
-            <div className="sign-container-form">
+            <div className={"sign-container-form" + " " + clase}>
                 <div className="sign-container-form-back">
                     <IoIosArrowBack className="sign-container-form-back-arrow"/>
                     <button>Back</button>
@@ -35,7 +35,8 @@ const Signin = ({labels, boton, logo, header, imagen, handleStep}) => {
 
                         </form>
 
-                        <button className="sign-container-form-whit-button">
+                        <button className="sign-container-form-whit-button"
+                        onClick={funcion_boton}>
                             {boton.toUpperCase()}
                         </button>
                     </div>
