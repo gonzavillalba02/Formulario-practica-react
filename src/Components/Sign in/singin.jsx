@@ -14,7 +14,7 @@ const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion
                     <IoIosArrowBack className="sign-container-form-back-arrow"/>
                     <button>Back</button>
                 </div>
-                <div className="sign-container-form-white">
+                <div className='sign-container-form-white'>
                     <div className="sign-container-form-white-header">
                         <p>{header}</p>
                         <div className="sign-container-form-white-header-sign">

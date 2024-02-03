@@ -39,11 +39,11 @@
     z-index: 50;
 }
 
-.sign-container-from-singin {
+.sign-container-from-singup {
     bottom: 100vh;
 }
 
-.sign-container-from-singup {
+.sign-container-from-singin {
     bottom: 91vh;
 }
 
@@ -68,9 +68,7 @@
 
 .sign-container-form-white {
     background: #FFFFFF;
-    height: 48vh;
     margin: 1vh 0 0 0;
-    padding: 0 0 2vh 0;
     width: 100%;
     border-bottom-left-radius: 1vh;
     border-bottom-right-radius: 1vh;

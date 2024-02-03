@@ -183,7 +183,7 @@ const Sign = () => {
                 header = 'CREATE AN ACCOUNT'
                 imagen = {<img src={imagenIN} alt="Console image" />}
                 handleStep = {handleStep}
-                clase = 'sign-container-from-singin'
+                clase = 'sign-container-from-singup'
                 funcion_boton = {sendup}
                 valuesup = {valuesup}
                 updateValues = {updateValues}
@@ -210,7 +210,7 @@ const Sign = () => {
                 header = 'ALREADY MEMBERS'
                 imagen = {<img src={imagenUP} alt="Console image" className="img-white"/>}
                 handleStep = {handleStep}
-                clase = 'sign-container-from-singup'
+                clase = 'sign-container-from-singin'
                 funcion_boton = {sendin}
                 valuesup = {valuesin}
                 updateValues = {updateValuesin}
