@@ -4,7 +4,7 @@ import './textfield.css';
 
 const Textfield = ({label, type, updateValues, valor, input, error}) => {
     return(
-        <>
+        <div className="textfiel-complete">
             <TextField 
             id="standard-basic" 
             label={label} 
@@ -12,14 +12,19 @@ const Textfield = ({label, type, updateValues, valor, input, error}) => {
             size="small"
             color="secondary"
             fullWidth
+            inputProps={{
+                style:{
+                    height: '2.4vh',
+                }
+            }}
             InputLabelProps={{
                 style:{ 
-                    fontSize: '12px',
+                    fontSize: '1.6vh',
                 }
             }}
             InputProps={{
                 style:{
-                    fontSize: '12px',
+                    fontSize: '1.6vh',
                 }
             }}
             type={type}
@@ -27,10 +32,7 @@ const Textfield = ({label, type, updateValues, valor, input, error}) => {
             onChange={(e) => updateValues(input,  e.target.value, true)}
             error = {error === "" ? false : !error}
             />
-            <div className="white-div">
-                .
-            </div>
-        </>
+        </div>
     )
 }
 
