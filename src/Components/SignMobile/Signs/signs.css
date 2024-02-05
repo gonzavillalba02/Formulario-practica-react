@@ -12,7 +12,7 @@
     border: none;
     background: none;
     cursor: pointer;
-    margin: 2vh auto 0 3vw;
+    margin: 2vh auto 0 2vh;
     font-size: 8vw;
 }
 
@@ -37,7 +37,7 @@
     justify-content: space-evenly;
     width: 80vw;
     height: 30vh;
-    margin-bottom: 5vh;
+    margin-bottom: 7.5vh;
 }
 
 .sign__botones-primero {
