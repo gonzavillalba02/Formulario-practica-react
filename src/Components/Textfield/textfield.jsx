@@ -2,7 +2,7 @@ import React from "react";
 import TextField from '@mui/material/TextField';
 import './textfield.css';
 
-const Textfield = ({label, type, updateValues, valor, input, error}) => {
+const Textfield = ({label, type, updateValues, valor, input, error, height, fontSize}) => {
     return(
         <div className="textfiel-complete">
             <TextField 
@@ -14,17 +14,17 @@ const Textfield = ({label, type, updateValues, valor, input, error}) => {
             fullWidth
             inputProps={{
                 style:{
-                    height: '2.4vh',
+                    height: {height},
                 }
             }}
             InputLabelProps={{
                 style:{ 
-                    fontSize: '1.6vh',
+                    fontSize: {fontSize},
                 }
             }}
             InputProps={{
                 style:{
-                    fontSize: '1.6vh',
+                    fontSize: {fontSize},
                 }
             }}
             type={type}

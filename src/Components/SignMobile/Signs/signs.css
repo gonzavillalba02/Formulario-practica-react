@@ -1,0 +1,65 @@
+.signsdom {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign__btn__img{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 2vh auto 0 3vw;
+    font-size: 8vw;
+}
+
+.sign__icono{
+    color: #464471;
+}
+
+.sign__img {
+    width: 25vw;
+    margin-top: 6vh;
+}
+
+.sign__form {
+    width: 70vw;
+    margin: auto 0;
+}
+
+.sign__botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: 30vh;
+    margin-bottom: 5vh;
+}
+
+.sign__botones-primero {
+    border: none;
+    background: #464471;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 7vw;
+    width: 100%;
+    border-radius: 7px;
+    padding: 1vh 0;
+}
+
+.sign__botones-segundo {
+    border: 3px solid #FDB832;
+    background: none;
+    color: #464471;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 7vw;
+    width: 100%;
+    border-radius: 7px;
+    padding: 1vh 0;
+}

@@ -5,7 +5,7 @@ import { IoEnterOutline, IoHome } from "react-icons/io5";
 import pantalla from '../../../assets/black-console.svg';
 import logo from '../../../assets/Icono.png';
 
-const Enter = () => {
+const Enter = ({setForm}) => {
 
     const[enter, setEnter] = useState(false)
 
@@ -26,7 +26,7 @@ const Enter = () => {
             <button className="enter-button" onClick={() => handleEnter()}>
                 ENTER
             </button>
-            <EnterSign enter={enter}/>
+            <EnterSign enter={enter} setForm={setForm}/>
         </div>
     )
 }

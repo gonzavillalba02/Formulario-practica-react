@@ -42,6 +42,8 @@ const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion
                                         updateValues={updateValues}
                                         valor= {label.value}
                                         valuesup={valuesup}
+                                        height='2.4vh'
+                                        fontSize='1.6vh'
                                         />
                             })}
 
