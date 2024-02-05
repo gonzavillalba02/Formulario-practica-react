@@ -6,6 +6,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+    top: 0;
+    right: 0;
     z-index: 50;
     animation: blurear 1s;
 }
@@ -18,7 +20,7 @@
 
 .alerta-cartel {
     background: #fff;
-    padding: 0 0 2vh 0;
+    padding: 0 2vw 4vh 0;
     border: 1px solid #000;
     border-radius: 5px;
     display: flex;
@@ -68,8 +70,6 @@
 }
 
 .alerta-cartel button {
-    position: relative;
-    left: 17.9vw;
     border: none;
     background: #464471;
     color: #fff;
@@ -79,5 +79,6 @@
     border-radius: 5px;
     padding: 1.2vh 1.8vw;
     cursor: pointer;
-    margin-top: -1vh;
+    margin-top: auto;
+    margin-left: auto;
 }

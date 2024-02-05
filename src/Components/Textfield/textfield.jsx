@@ -28,7 +28,6 @@ const Textfield = ({label, type, updateValues, valor, input, error}) => {
                 }
             }}
             type={type}
-            value={valor}
             onChange={(e) => updateValues(input,  e.target.value, true)}
             error = {error === "" ? false : !error}
             />

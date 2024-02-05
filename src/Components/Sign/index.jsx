@@ -137,17 +137,18 @@ const Sign = () => {
     }
 
     const updateValuesin = (input, value, valid) => {
-        setValuesin(
-            {
+        setValuesin((prevValues) => {
+            return {
+                ...prevValues,
                 email: {
-                    value: input === 'E-MAIL' ? value : valuesin.email.value
+                    value: input === 'E-MAIL' ? value : prevValues.email.value
                 },
                 password: {
-                    value: input === 'PASSWORD' ? value : valuesin.email.value
+                    value: input === 'PASSWORD' ? value : prevValues.password.value
                 }
-            }
-        )
-    }
+            };
+        });
+    };
 
     const updateValues = (input, value, valid) => {
         setValuesup(
@@ -173,7 +174,7 @@ const Sign = () => {
     }
 
     return(
-        <>
+        <div className="sign">
             {step === true ? 
                 <>
                 <Signin /*Sign up*/
@@ -198,7 +199,7 @@ const Sign = () => {
                 {completed === false ?
                     <></>
                 :
-                    <Completed 
+                    <Completed setValuesin={setValuesin} valuesup={valuesup}
                     handleStep= {handleStep}/>
                 }
                 </>
@@ -217,7 +218,7 @@ const Sign = () => {
                 handleCompleted = {handleCompleted}
                 />
             }
-        </>
+        </div>
     )
 }
 

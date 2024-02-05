@@ -1,0 +1,122 @@
+.entersignup {
+    position: absolute;
+    animation: subir 1s ease-out;
+    overflow: hidden;
+    height: 100vh;
+}
+
+@keyframes subir {
+    0% {
+        transform: translateY(100vh);
+    }
+}
+
+.entersigndown {
+    position: absolute;
+    top: 100vh;
+    animation: bajar 1s;
+    overflow: hidden;
+    height: 100vh;
+}
+
+@keyframes bajar {
+    0% {
+        transform: translateY(-100vh);
+    }
+}
+
+.entersign-darkyellowup {
+    width: 200vw;
+    height: 100vh;
+    top: 32vh;
+    position: relative;
+    rotate: 10deg;
+    background: #7D5B19;
+    z-index: -100;
+    animation: subir 1.2s ease-out;
+}
+
+.entersign-darkyellow {
+    width: 200vw;
+    height: 100vh;
+    top: 32vh;
+    position: relative;
+    rotate: 10deg;
+    background: #7D5B19;
+    z-index: -100;
+    animation: bajardark .5s;
+}
+
+@keyframes bajardark {
+    0% {
+        opacity: 0;
+    }
+}
+
+
+.entersign-yellow {
+    position: absolute;
+    top: 37vh;
+    width: 200vw;
+    height: 100vh;
+    rotate: 10deg;
+    background: #FDB832;
+}
+
+.entersign-buttons {
+    position: relative;
+    bottom: 42vh;
+    left: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entersign-buttons-botones {
+    border: none;
+    width: 100%;
+    padding: 2vh;
+    border-radius: 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.entersign-buttons-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.entersign-buttons-div p {
+    margin: -2vh 0 .5vh 0;
+    color: #7D5B19;
+}
+
+.boton-signup {
+    border: none;
+    background: #464471;
+    color: #fff;
+    font-size: 4vw;
+}
+
+.boton-signin {
+    color: #464471;
+    background: #fff;
+    font-size: 4vw;
+}
+
+.boton-facebook {
+    color: #7D5B19;
+    background: #FDB832;
+    box-shadow: 2px 2px 5px 0 #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

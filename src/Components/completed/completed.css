@@ -6,6 +6,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+    top: 0;
+    right: 0;
     z-index: 50;
     animation: blurear 1s;
 }
@@ -26,7 +28,7 @@
     align-items: center;
     width: 45vw;
     height: 52vh;
-    padding-bottom: 1vh;
+    padding:0 1.7vw 3vh 0;
     animation: aparecer 1s;
 }
 
@@ -45,13 +47,11 @@
 
 .completed-cartel img {
     position: relative;
-    bottom: .7em;
+    top: 4vh;
     width: 11.3vmax;
 }
 
 .completed-cartel button {
-    position: relative;
-    left: 17.5vw;
     top: 2vh;
     border: none;
     background: #464471;
@@ -61,5 +61,7 @@
     font-size: 1.18vw;
     border-radius: 5px;
     padding: .5em 1.5em;
+    margin-top: auto;
+    margin-left: auto;
     cursor: pointer;
 }
