@@ -28,7 +28,7 @@
 .entersign-darkyellowup {
     width: 200vw;
     height: 100vh;
-    top: 32vh;
+    top: 29vh;
     position: relative;
     rotate: 10deg;
     background: #7D5B19;
@@ -39,7 +39,7 @@
 .entersign-darkyellow {
     width: 200vw;
     height: 100vh;
-    top: 32vh;
+    top: 29vh;
     position: relative;
     rotate: 10deg;
     background: #7D5B19;
@@ -56,7 +56,7 @@
 
 .entersign-yellow {
     position: absolute;
-    top: 37vh;
+    top: 34vh;
     width: 200vw;
     height: 100vh;
     rotate: 10deg;
@@ -65,7 +65,7 @@
 
 .entersign-buttons {
     position: relative;
-    bottom: 42vh;
+    bottom: 46vh;
     left: 65vw;
     display: flex;
     flex-direction: column;
