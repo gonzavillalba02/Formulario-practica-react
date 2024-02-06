@@ -35,6 +35,7 @@ const SignMobile = ({valuesup, updateValues, labels_up, valuesin, setValuesin, u
             handleCompleted={handleCompleted}
             />}
             {form === 2 && 
+            /*Sign in*/
             <Signs
             values={valuesin}
             updateValues={updateValuesin}
@@ -45,6 +46,7 @@ const SignMobile = ({valuesup, updateValues, labels_up, valuesin, setValuesin, u
             setForm={setForm}
             numero = '1'
             setEnter={setEnter}
+            blanco = "blanco"
             />}
         </div>
     )

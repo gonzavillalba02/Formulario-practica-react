@@ -46,6 +46,10 @@
     margin-bottom: .5vh;
 }
 
+.blanco {
+    color: #fff;
+}
+
 .sign__botones {
     display: flex;
     flex-direction: column;
