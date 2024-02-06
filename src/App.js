@@ -6,6 +6,12 @@ import { validName, validEmail, validPassword } from './validacionesup.js';
 
 function App() {
 
+  const [step, setStep] = useState(true)
+
+  const handleStep = () => {
+      setStep(!step)
+  }
+
   const [alert, setAlert] = useState(false)
 
   const [completed, setCompleted] = useState(false)
@@ -154,7 +160,7 @@ function App() {
             updateValues("password", valuesup.password.value, false)
         }
         
-        handleAlert(!alert)
+        handleAlert()
     }
 }
 
@@ -178,6 +184,8 @@ const sendin = () => {
        handleAlert={handleAlert}
        completed={completed}
        handleCompleted={handleCompleted}
+       step={step}
+       handleStep={handleStep}
        />
        <SignMobile 
        valuesup={valuesup}
@@ -189,6 +197,10 @@ const sendin = () => {
        labels_in={labels_in}
        sendup={sendup}
        sendin={sendin}
+       alert={alert}
+       completed={completed}
+       handleAlert={handleAlert}
+       handleCompleted={handleCompleted}
        />
     </div>
   );

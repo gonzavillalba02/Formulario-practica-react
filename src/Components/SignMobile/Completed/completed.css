@@ -1,0 +1,22 @@
+.completed-dom {
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    background: none;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    animation: blurear 1s;
+}
+
+.completed-dom img {
+    width: 50vw;
+}
+
+@keyframes blurear {
+    0% {
+        opacity: 0;
+    }
+}

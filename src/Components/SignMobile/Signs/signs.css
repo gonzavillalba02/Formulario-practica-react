@@ -3,6 +3,14 @@
     height: 100vh;
     background: #fff;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signsdom_todo {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -12,7 +20,7 @@
     border: none;
     background: none;
     cursor: pointer;
-    margin: 2vh auto 0 2vh;
+    margin: 2vh auto 0 0;
     font-size: 8vw;
 }
 
@@ -30,6 +38,14 @@
     margin: auto 0;
 }
 
+.sign__botones-info {
+    border: none;
+    background: none;
+    color: #464471;
+    font-size: 3vh;
+    margin-bottom: .5vh;
+}
+
 .sign__botones {
     display: flex;
     flex-direction: column;
@@ -38,6 +54,13 @@
     width: 80vw;
     height: 30vh;
     margin-bottom: 7.5vh;
+}
+
+.sign__botones div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .sign__botones-primero {

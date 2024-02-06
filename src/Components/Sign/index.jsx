@@ -8,13 +8,7 @@ import imagenUP from '../../assets/white-console.svg';
 import Alerta from "../Alerta";
 import Completed from "../completed";
 
-const Sign = ({valuesup, updateValues, labels_up, valuesin, setValuesin, updateValuesin, labels_in, sendup, sendin, alert, handleAlert, completed, handleCompleted}) => {
-
-    const [step, setStep] = useState(true)
-
-    const handleStep = () => {
-        setStep(!step)
-    }
+const Sign = ({valuesup, updateValues, labels_up, valuesin, setValuesin, updateValuesin, labels_in, sendup, sendin, alert, handleAlert, completed, handleCompleted, step, handleStep}) => {
 
     return(
         <div className="sign">
