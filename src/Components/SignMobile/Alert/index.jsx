@@ -1,6 +1,7 @@
 import React from "react";
 import './alert.css';
-import { IoMdReturnLeft, IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { RxCrossCircled } from "react-icons/rx";
 import robot from '../../../assets/robot.svg';
 
 const Alert = ({handleAlert}) => {
@@ -8,7 +9,7 @@ const Alert = ({handleAlert}) => {
         <div className="alert">
             <div className="alert-dom">
                 <button className="alert__return" onClick={() => handleAlert()}>
-                    <IoMdReturnLeft />
+                    <RxCrossCircled />
                 </button>
                 <img src={robot} alt="Robot" className="alert__robot"/>
                 <div className="alert_rules">
