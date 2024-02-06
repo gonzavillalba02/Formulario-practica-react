@@ -12,7 +12,7 @@ const Signs = ({values, updateValues, labels, send, boton1, boton2, setForm, num
         <div className="signsdom">
             <div className="signsdom_todo">
                 <button className="sign__btn__img" 
-                onClick={() => {
+                    onClick={() => {
                     setForm(0)
                     setEnter(true)
                     }}>
