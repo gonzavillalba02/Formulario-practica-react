@@ -17,7 +17,7 @@ function App() {
   const [completed, setCompleted] = useState(false)
 
   const handleAlert = () => {
-      setAlert(!alert)
+    setAlert(!alert)
   }
 
   const handleCompleted = () => {

@@ -28,11 +28,13 @@
 
 .enter-console {
     width: 60vw;
+    max-width: 240px;
     margin-top: 6vh;
 }
 
 .enter-icono-img {
     width: 20vw;
+    max-width: 80px;
     position: relative;
     bottom: 3vh;
     z-index: 100;
@@ -48,4 +50,24 @@
     font-weight: 600;
     font-size: 15vw;
     margin-top: 15vh;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1024px) {
+    .enter-icono {
+        font-size: 7vh;
+    }
+
+    .enter-console {
+        width: 35vh;
+    }
+
+    .enter-icono-img {
+        width: 13vh;
+        bottom: 4vh;
+    }
+
+    .enter-button {
+        font-size: 9vh;
+        margin-top: 13vh;
+    }
 }

@@ -48,7 +48,7 @@
 .alert_rules li {
     display: flex;
     align-items: center;
-    font-size: 4vmin;
+    font-size: 3.5vmin;
 }
 
 .alert_rules li p {
@@ -70,4 +70,27 @@
     width: 100%;
     border: none;
     background: none;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1024px) {
+    .alert__return {
+        color: #464471;
+        font-size: 4vh;
+    }
+
+    .alert__robot {
+        width: 15vh;
+    }
+
+    .alert_rules {
+        margin: 0 0 3.5vh 0;
+    }
+
+    .alert_rules li {
+        font-size: 2vmin;
+    }
+
+    .alert__rules-icono{
+        font-size: 3.5vmin;
+    }
 }
