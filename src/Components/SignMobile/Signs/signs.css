@@ -112,6 +112,11 @@
         left: 20vw;
     }
 
+    .blanco {
+        bottom: 1000px;
+    }
+    
+
     .sign__botones-primero {
         position: relative;
         bottom: 2.15vh;
