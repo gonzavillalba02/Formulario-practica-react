@@ -7,7 +7,7 @@ import Alert from "../Alert";
 import Completed from "../Completed";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
-const Signs = ({values, updateValues, labels, send, boton1, boton2, setForm, numero, setEnter, alert, completed, handleAlert, handleCompleted, blanco}) => {
+const Signs = ({values, updateValues, labels, send, boton1, boton2, setForm, numero, setEnter, alert, completed, handleAlert, handleCompleted, blanco, dic}) => {
     return(
         <div className="signsdom">
             <div className="signsdom_todo">
@@ -49,7 +49,7 @@ const Signs = ({values, updateValues, labels, send, boton1, boton2, setForm, num
                     </button>
                 </div>
             </div>
-            {alert && <Alert handleAlert={handleAlert}/>}
+            {alert && <Alert handleAlert={handleAlert} dic={dic}/>}
             {completed && <Completed setForm={setForm} handleCompleted={handleCompleted}/>}
         </div>
     )

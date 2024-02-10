@@ -3,8 +3,26 @@ import './App.css';
 import Sign from './Components/Sign';
 import SignMobile from './Components/SignMobile';
 import { validName, validEmail, validPassword } from './validacionesup.js';
+import { ingles, español, italiano, frances } from './diccionario.js';
 
 function App() {
+
+  const [dic, setDic] = useState(ingles);
+
+  const handleDic = (event) => {
+    if (event.target.value === "ingles"){
+        setDic(ingles)
+    }
+    if (event.target.value === "español"){
+        setDic(español)
+    }
+    if (event.target.value === "italiano"){
+        setDic(italiano)
+    }
+    if (event.target.value === "frances"){
+        setDic(frances)
+    }
+  }
 
   const [step, setStep] = useState(true)
 
@@ -70,14 +88,14 @@ function App() {
 
   const labels_up = [
     {
-        label: 'FIRST NAME',
+        label: dic.sign.first,
         type: '',
         input: 'firstName',
         value: valuesup.firstName.value,
         valid: valuesup.firstName.valid
     },
     {
-        label: 'LAST NAME',
+        label: dic.sign.last,
         type: '',
         input: 'lastName',
         value: valuesup.lastName.value,
@@ -85,14 +103,14 @@ function App() {
         
     },
     {
-        label: 'E-MAIL',
+        label: dic.sign.email,
         type: '',
         input: 'email',
         value: valuesup.email.value,
         valid: valuesup.email.valid
     },
     {
-        label: 'PASSWORD',
+        label: dic.sign.password,
         type: 'password',
         input: 'password',
         value: valuesup.password.value,
@@ -127,13 +145,13 @@ function App() {
 
   const labels_in = [
     {
-        label: 'E-MAIL',
+        label: dic.sign.email,
         type: '',
         input: 'E-MAIL',
         valid: true
     },
     {
-        label: 'PASSWORD',
+        label: dic.sign.password,
         type: 'password',
         input: 'PASSWORD',
         valid: true
@@ -186,6 +204,8 @@ const sendin = () => {
        handleCompleted={handleCompleted}
        step={step}
        handleStep={handleStep}
+       dic = {dic}
+       handleDic={handleDic}
        />
        <SignMobile 
        valuesup={valuesup}
@@ -201,6 +221,8 @@ const sendin = () => {
        completed={completed}
        handleAlert={handleAlert}
        handleCompleted={handleCompleted}
+       dic = {dic}
+       handleDic={handleDic}
        />
     </div>
   );

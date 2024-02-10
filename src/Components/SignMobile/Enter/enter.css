@@ -11,6 +11,18 @@
     overflow: hidden;
 }
 
+.enter-select {
+    background: none;
+    border: none;
+    appearance: none;
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    padding: .5vw 1vw;
+    font-size: 2.5vh;
+    z-index: 200;
+}
+
 .enter-icono-boton {
     border: none;
     background: none;

@@ -4,7 +4,7 @@ import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { RxCrossCircled } from "react-icons/rx";
 import robot from '../../../assets/robot.svg';
 
-const Alert = ({handleAlert}) => {
+const Alert = ({handleAlert, dic}) => {
     return(
         <div className="alert">
             <div className="alert-dom">
@@ -14,12 +14,12 @@ const Alert = ({handleAlert}) => {
                 <img src={robot} alt="Robot" className="alert__robot"/>
                 <div className="alert_rules">
                     <p>
-                        Please follow the rules below:
+                        {dic.alert.please}
                     </p>
                     <ul>
-                        <li><IoIosCheckmarkCircleOutline className="alert__rules-icono"/> <p>The First and the Last name must contain at least 2 characters</p></li>
-                        <li><IoIosCheckmarkCircleOutline className="alert__rules-icono"/> <p>Enter a valid email. Must contain '@'</p></li>
-                        <li><IoIosCheckmarkCircleOutline className="alert__rules-icono"/> <p>The password must contain between 8 and 20 characters, 1 capital letter and 1 special character (# _ - $ @)</p></li>
+                        <li><IoIosCheckmarkCircleOutline className="alert__rules-icono"/> <p>{dic.alert.rule1}</p></li>
+                        <li><IoIosCheckmarkCircleOutline className="alert__rules-icono"/> <p>{dic.alert.rule2}</p></li>
+                        <li><IoIosCheckmarkCircleOutline className="alert__rules-icono"/> <p>{dic.alert.rule3}</p></li>
                     </ul>
                 </div>
             </div>

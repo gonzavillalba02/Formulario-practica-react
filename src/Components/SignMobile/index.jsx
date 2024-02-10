@@ -3,7 +3,7 @@ import './SignMobile.css';
 import Enter from "./Enter";
 import Signs from "./Signs";
 
-const SignMobile = ({valuesup, updateValues, labels_up, valuesin, setValuesin, updateValuesin, labels_in, sendup, sendin, alert, completed, handleAlert, handleCompleted}) => {
+const SignMobile = ({valuesup, updateValues, labels_up, valuesin, setValuesin, updateValuesin, labels_in, sendup, sendin, alert, completed, handleAlert, handleCompleted, dic, handleDic}) => {
     
     const [form, setForm] = useState(0);
 
@@ -16,6 +16,8 @@ const SignMobile = ({valuesup, updateValues, labels_up, valuesin, setValuesin, u
             setForm={setForm}
             enter={enter}
             setEnter={setEnter}
+            dic = {dic}
+            handleDic={handleDic}
             />}
             {form === 1 && 
             /*Sign up*/
@@ -24,8 +26,8 @@ const SignMobile = ({valuesup, updateValues, labels_up, valuesin, setValuesin, u
             updateValues={updateValues}
             labels={labels_up}
             send={sendup}
-            boton1 = 'SIGN UP'
-            boton2 = 'SIGN IN'
+            boton1 = {String(dic.sign.signup).toUpperCase()}
+            boton2 = {String(dic.sign.singin).toUpperCase()}
             setForm={setForm}
             numero = '2'
             setEnter={setEnter}
@@ -33,6 +35,7 @@ const SignMobile = ({valuesup, updateValues, labels_up, valuesin, setValuesin, u
             completed={completed}
             handleAlert={handleAlert}
             handleCompleted={handleCompleted}
+            dic = {dic}
             />}
             {form === 2 && 
             /*Sign in*/
@@ -41,12 +44,13 @@ const SignMobile = ({valuesup, updateValues, labels_up, valuesin, setValuesin, u
             updateValues={updateValuesin}
             labels={labels_in}
             send={sendin}
-            boton1 = 'SIGN IN'
-            boton2 = 'SIGN UP'
+            boton1 = {String(dic.sign.singin).toUpperCase()}
+            boton2 = {String(dic.sign.signup).toUpperCase()}
             setForm={setForm}
             numero = '1'
             setEnter={setEnter}
             blanco = "blanco"
+            dic = {dic}
             />}
         </div>
     )

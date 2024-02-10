@@ -4,15 +4,21 @@ import { IoIosArrowBack } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import Textfield from "../Textfield/textfield";
 
-const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion_boton, updateValues, valuesup, handleCompleted}) => {
+const Signin = ({labels, boton, boton2, logo, header, imagen, handleStep, clase, funcion_boton, updateValues, valuesup, handleCompleted, dic, handleDic}) => {
 
     return(
         <div className="sign-container">
             <div className="sign-container-yellow"></div>
+            <select name="idioma" id="idioma" className="sign-container-select" onChange={(e) => handleDic(e)}>
+                <option value="ingles">🇺🇸</option>
+                <option value="español">🇪🇸</option>
+                <option value="italiano">🇮🇹</option>
+                <option value="frances">🇫🇷</option>
+            </select>
             <div className={"sign-container-form" + " " + clase}>
                 <div className="sign-container-form-back">
                     <IoIosArrowBack className="sign-container-form-back-arrow"/>
-                    <button>Back</button>
+                    <button>{dic.sign.back}</button>
                 </div>
                 <div className='sign-container-form-white'>
                     <div className="sign-container-form-white-header">
@@ -25,7 +31,7 @@ const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion
                                 handleCompleted()
                                 }}
                             >
-                                {boton == 'Sign in' ? 'Sign up' : 'Sign in'}
+                                {boton2}
                             </button>
                         </div>
                     </div>
@@ -57,11 +63,11 @@ const Signin = ({labels, boton, logo, header, imagen, handleStep, clase, funcion
                 </div>
                 <div className="sign-container-form-facebook">
                         <button>
-                            <FaFacebookF />
-                            {boton.toUpperCase()} WITH FACEBOOK
+                            <FaFacebookF className="sign-container-form-facebook-icono"/>
+                            {boton.toUpperCase() + " " +dic.sign.facebook}
                         </button>
                         <p>
-                            By signing up you agree <br/> Terms & Conditions and Quality Policy
+                            {dic.sign.terms}
                         </p>
                 </div>
             </div>

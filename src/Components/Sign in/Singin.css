@@ -6,6 +6,20 @@
     overflow: hidden;
 }
 
+.sign-container-select {
+    background: none;
+    border: none;
+    appearance: none;
+    position: absolute;
+    top: .8vh;
+    left: 96.5vw;
+    padding: .5vw 1vw;
+    font-size: 2.5vh;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
 .sign-container img {
     position: relative;
     bottom: 150vh;
@@ -80,6 +94,7 @@
     padding: 1.5vh 1vw;
     box-shadow: 0 2px 6px #9b9b9b;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -93,8 +108,6 @@
 .sign-container-form-white-header-sign {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 4.4vw;
 }
 
 .faplus {
@@ -105,10 +118,9 @@
     font-family: 'Open Sans', sans-serif;
     color: #000000;
     font-weight: 400;
-    font-size: .8vw;
+    font-size: .7vw;
     border: none;
     background: none;
-    width: 3.3vw;
     cursor: pointer;
     white-space: nowrap;
 }
@@ -154,19 +166,24 @@
 .sign-container-form-facebook button{
     border: none;
     background: #FDB832;
+    color: #3d280b;
     box-shadow: 0px 4px 4px 1px #7d5b19;
     border-radius: 3px;
     padding: 1em .7em;
-    width: 60%;
+    width: 69%;
     height: 5vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-    font-size: .8vw;
+    font-size: .6vw;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     white-space: nowrap;
+}
+
+.sign-container-form-facebook-icono {
+    margin-right: .5vw;
 }
 
 .sign-container-form-facebook p {
@@ -176,4 +193,5 @@
     color: #7d5b19;
     text-align: center;
     margin: 2vh 0 0 0;
+    width: 13vw;
 }
